@@ -1,4 +1,4 @@
 # ImageReducer
-Python script to reduce images to 25% or 50% using the Pillow package
+Python script to reduce images to any percentage using the Pillow package
 
-Copy the script in the folder, open the Windows terminal and execute using the cmd: 'Python main.py 25%'
+The exe file is in the "dist" directory
