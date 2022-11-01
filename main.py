@@ -1,27 +1,21 @@
 from PIL import Image
-import os, sys
+import os
 
-resize_percentajes = {
-    "25%": 4,
-    "50%": 2
-}
+in_path = input("Directory: ")
+in_percentage = int(input("% resize: ")) / 100
 
-if len(sys.argv) != 3:
-    if sys.argv[1] in resize_percentajes:
-        percentaje_value = resize_percentajes[sys.argv[1]]
+#currentPath = os.getcwd()
+#files = os.listdir(currentPath)
 
-        currentPath = os.getcwd()
-        files = os.listdir(currentPath)
+files = os.listdir(in_path)
 
-        for file in files:
+for file in files:
+    if file[-4:] == ".jpg":
+        with Image.open(os.path.join(in_path, file)) as im:
 
-            if file[-4:] == ".jpg":
-                with Image.open(file) as im:
-                    im = im.resize((im.width//percentaje_value,
-                                    im.height//percentaje_value))
-                    im.save(file)
+            new_size = (int(im.width * in_percentage),
+                        int(im.height * in_percentage))
+            im = im.resize(new_size)
+            im.save(file)
 
-        print("Done!")
-
-    else: print("Invalid argument, try introducing 25% or 50%")
-else: print("Invalid argument")
+print("Done!")
