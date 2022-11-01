@@ -4,9 +4,6 @@ import os
 in_path = input("Directory: ")
 in_percentage = int(input("% resize: ")) / 100
 
-#currentPath = os.getcwd()
-#files = os.listdir(currentPath)
-
 files = os.listdir(in_path)
 
 for file in files:
@@ -16,6 +13,7 @@ for file in files:
             new_size = (int(im.width * in_percentage),
                         int(im.height * in_percentage))
             im = im.resize(new_size)
-            im.save(file)
+
+            im.save(os.path.join(in_path,file))
 
 print("Done!")
