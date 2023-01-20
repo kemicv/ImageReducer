@@ -15,10 +15,11 @@
 
 <div class="node">
   <a name="main.py"></a>
-  <a target="code" href="///C:/Users/Ventas/Desktop/ImageReducer/main.py" type="text/plain"><tt>main.py</tt></a>
+  <a target="code" href="///C:/Users/Ventas/Desktop/reposGitHub/ImageReducer/main.py" type="text/plain"><tt>main.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
     <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.ExifTags">PIL.ExifTags</a>
  &#8226;   <a href="#PIL.Image">PIL.Image</a>
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_weakrefset">_weakrefset</a>
@@ -26,6 +27,7 @@ imports:
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#contextlib">contextlib</a>
  &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#encodings">encodings</a>
  &#8226;   <a href="#encodings.aliases">encodings.aliases</a>
@@ -288,17 +290,6 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="'PyQt6.QtGui'"></a>
-  <a target="code" href="" type="text/plain"><tt>'PyQt6.QtGui'</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#PIL.ImageQt">PIL.ImageQt</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="'PySide2.QtGui'"></a>
   <a target="code" href="" type="text/plain"><tt>'PySide2.QtGui'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
@@ -454,6 +445,7 @@ imported by:
 imports:
     <a href="#PIL">PIL</a>
  &#8226;   <a href="#PIL.BmpImagePlugin">PIL.BmpImagePlugin</a>
+ &#8226;   <a href="#PIL.FitsImagePlugin">PIL.FitsImagePlugin</a>
  &#8226;   <a href="#PIL.GifImagePlugin">PIL.GifImagePlugin</a>
  &#8226;   <a href="#PIL.GimpGradientFile">PIL.GimpGradientFile</a>
  &#8226;   <a href="#PIL.GimpPaletteFile">PIL.GimpPaletteFile</a>
@@ -469,6 +461,7 @@ imports:
  &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
  &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
  &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
+ &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
  &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
  &#8226;   <a href="#PIL.PaletteFile">PIL.PaletteFile</a>
  &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
@@ -494,6 +487,7 @@ imported by:
  &#8226;   <a href="#PIL.DcxImagePlugin">PIL.DcxImagePlugin</a>
  &#8226;   <a href="#PIL.DdsImagePlugin">PIL.DdsImagePlugin</a>
  &#8226;   <a href="#PIL.EpsImagePlugin">PIL.EpsImagePlugin</a>
+ &#8226;   <a href="#PIL.ExifTags">PIL.ExifTags</a>
  &#8226;   <a href="#PIL.FitsImagePlugin">PIL.FitsImagePlugin</a>
  &#8226;   <a href="#PIL.FitsStubImagePlugin">PIL.FitsStubImagePlugin</a>
  &#8226;   <a href="#PIL.FliImagePlugin">PIL.FliImagePlugin</a>
@@ -720,6 +714,22 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="PIL.ExifTags"></a>
+  <a target="code" href="///C:/Users/Ventas/AppData/Local/Programs/Python/Python310/lib/site-packages/PIL/ExifTags.py" type="text/plain"><tt>PIL.ExifTags</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PIL">PIL</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="PIL.FitsImagePlugin"></a>
   <a target="code" href="///C:/Users/Ventas/AppData/Local/Programs/Python/Python310/lib/site-packages/PIL/FitsImagePlugin.py" type="text/plain"><tt>PIL.FitsImagePlugin</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -732,7 +742,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#PIL.FitsStubImagePlugin">PIL.FitsStubImagePlugin</a>
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.FitsStubImagePlugin">PIL.FitsStubImagePlugin</a>
  &#8226;   <a href="#PIL.Image">PIL.Image</a>
 
   </div>
@@ -1369,7 +1380,6 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#'PyQt5.QtGui'">'PyQt5.QtGui'</a>
- &#8226;   <a href="#'PyQt6.QtGui'">'PyQt6.QtGui'</a>
  &#8226;   <a href="#'PySide2.QtGui'">'PySide2.QtGui'</a>
  &#8226;   <a href="#'PySide6.QtGui'">'PySide6.QtGui'</a>
  &#8226;   <a href="#PIL">PIL</a>
@@ -1512,7 +1522,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+    <a href="#PIL">PIL</a>
+ &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
  &#8226;   <a href="#PIL.Image">PIL.Image</a>
 
   </div>
@@ -4740,6 +4751,7 @@ imported by:
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
+ &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#setuptools.command.sdist">setuptools.command.sdist</a>
  &#8226;   <a href="#setuptools.config">setuptools.config</a>
  &#8226;   <a href="#setuptools.depends">setuptools.depends</a>
@@ -11701,6 +11713,7 @@ imported by:
  &#8226;   <a href="#PyInstaller.utils.osx">PyInstaller.utils.osx</a>
  &#8226;   <a href="#PyInstaller.utils.win32.winmanifest">PyInstaller.utils.win32.winmanifest</a>
  &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+ &#8226;   <a href="#PyQt6">PyQt6</a>
  &#8226;   <a href="#_bootsubprocess">_bootsubprocess</a>
  &#8226;   <a href="#_distutils_hack">_distutils_hack</a>
  &#8226;   <a href="#_osx_support">_osx_support</a>
@@ -12482,6 +12495,7 @@ imported by:
     <a href="#PyInstaller.lib.modulegraph.find_modules">PyInstaller.lib.modulegraph.find_modules</a>
  &#8226;   <a href="#PyInstaller.lib.modulegraph.modulegraph">PyInstaller.lib.modulegraph.modulegraph</a>
  &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
+ &#8226;   <a href="#PyQt6">PyQt6</a>
  &#8226;   <a href="#lib2to3.pgen2.driver">lib2to3.pgen2.driver</a>
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
  &#8226;   <a href="#pkg_resources">pkg_resources</a>
@@ -15016,6 +15030,7 @@ imported by:
  &#8226;   <a href="#PyInstaller.utils.win32.icon">PyInstaller.utils.win32.icon</a>
  &#8226;   <a href="#PyInstaller.utils.win32.winmanifest">PyInstaller.utils.win32.winmanifest</a>
  &#8226;   <a href="#PyInstaller.utils.win32.winutils">PyInstaller.utils.win32.winutils</a>
+ &#8226;   <a href="#PyQt6">PyQt6</a>
  &#8226;   <a href="#__main__">__main__</a>
  &#8226;   <a href="#_aix_support">_aix_support</a>
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
