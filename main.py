@@ -3,13 +3,14 @@ from PIL.ExifTags import TAGS
 from contextlib import closing
 import os
 
+print("v2303071")
 in_path = input("Directory: ")
 in_percentage = int(input("% resize: "))
 files = os.listdir(in_path)
 
 for file in files:
     base, ext = os.path.splitext(file)
-    if ext == ".jpg":
+    if ext == ".jpg" or ext == ".jpeg":
         with closing(Image.open(os.path.join(in_path, file))) as im:
             exif_data = im.getexif()
             if exif_data:
